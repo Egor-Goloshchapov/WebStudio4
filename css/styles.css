@@ -12,6 +12,7 @@ body {
 
 .container {
     width: 1200px;
+    outline: solid green;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -249,11 +250,11 @@ letter-spacing: 0.28px;
 
 .section-list {
     display: flex;
+    gap: 30px;
     padding-top: 94px;
     margin-bottom: 118px;
 justify-content: center;
 }
-
 
 .programming-list {
     display: flex;
@@ -262,10 +263,12 @@ justify-content: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    outline: solid red;
 }
 
 .programming-fotos {
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .workers-list {
@@ -388,3 +391,4 @@ background-color: var(--background-color);
     display: flex;
     gap: 30px;
 }
+
