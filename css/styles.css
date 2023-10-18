@@ -16,6 +16,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: solid red;
 }
 
 .article {
@@ -84,6 +85,8 @@ margin-right: auto;
 
    .main-description {
     background-color: var(--akcent-color);
+    width: 216px;
+    height: 50px;
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -175,7 +178,6 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
-padding-top: 60px;
 margin-bottom: 20px;
 }
 
@@ -239,6 +241,7 @@ letter-spacing: 0.28px;
 .header-list {
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 .header-contacts{
@@ -251,22 +254,21 @@ letter-spacing: 0.28px;
     display: flex;
     gap: 30px;
     padding-top: 94px;
-    margin-bottom: 118px;
+    padding-bottom: 94px;
 justify-content: center;
 }
 
 .programming-list {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .programming-fotos {
-    margin-right: 15px;
-    margin-left: 15px;
+
 }
 
 .workers-list {
@@ -355,6 +357,7 @@ margin-left: 5px;
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-navigation {
@@ -381,7 +384,7 @@ background-color: var(--background-color);
 }
 
 .section-item {
-    margin-right: 30px;
+
 }
 
 .section-item:last-child {
@@ -393,3 +396,7 @@ background-color: var(--background-color);
     gap: 30px;
 }
 
+.programming-item {
+    margin-right: 15px;
+    margin-left: 15px;
+}
