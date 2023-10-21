@@ -66,6 +66,8 @@ letter-spacing: 1.08px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.48px;
+    margin-top: 10px;
+    text-align: center;
    }
 
    .main-tittle {
@@ -168,6 +170,9 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
+margin-top: 30px;
+margin-bottom: 10px;
+text-align: center;
 }
 
 .article-footer {
@@ -230,7 +235,7 @@ letter-spacing: 0.28px;
 .header-contact {
     display: flex;
     flex-direction: row;
-    color: var(--akcent-color);
+    color: #757575;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -261,7 +266,6 @@ justify-content: center;
 .programming-list {
     display: flex;
     margin-top: 50px;
-    padding-bottom: 94px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -274,7 +278,7 @@ justify-content: center;
 .workers-list {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     justify-content: center;
 }
 
@@ -287,8 +291,7 @@ justify-content: center;
 }
 
 .footer-list {
-    padding-top: 80px;
-    padding-bottom: 80px;
+
 }
 
 .footer-mail {
@@ -397,6 +400,19 @@ background-color: var(--background-color);
 }
 
 .programming-item {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 30px;
+}
+
+.programming {
+    padding-bottom: 94px;
+}
+
+.workers {
+    margin-top: 94px;
+    background-color: #F5F4FA;
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
