@@ -283,6 +283,7 @@ justify-content: center;
 
 .workers-item {
     margin-right: 30px;
+    background-color: #FFF;
 }
 
 .workers-item:last-child {
