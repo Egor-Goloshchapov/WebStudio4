@@ -140,6 +140,7 @@ margin-right: auto;
     letter-spacing: 0.48px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 20px;
    }
 
    .article-footer-portfolio {
@@ -342,7 +343,6 @@ margin-left: 5px;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    padding-bottom: 94px;
 }
 
 .articles-fotos {
@@ -400,7 +400,6 @@ width: 370px;
 }
 
 .workers {
-    margin-top: 94px;
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -417,4 +416,9 @@ width: 370px;
 
 .footer-span {
     color: #FFF;
+}
+
+.description {
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
