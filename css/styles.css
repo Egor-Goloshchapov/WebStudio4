@@ -56,7 +56,6 @@ letter-spacing: 1.08px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    padding-top: 94px;
    }
 
    .workers-job {
@@ -277,7 +276,6 @@ justify-content: center;
 .workers-list {
     display: flex;
     margin-top: 50px;
-    padding-bottom: 94px;
     justify-content: center;
 }
 
@@ -333,20 +331,15 @@ margin-right: 5px;
 margin-left: 5px;
 }
 
-.article-lists {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    padding-bottom: 30px;
-}
 
 .article-foto {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-.articles-list {
+.article-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     padding-bottom: 94px;
@@ -395,8 +388,7 @@ background-color: var(--background-color);
 }
 
 .article-item {
-    display: flex;
-    gap: 30px;
+width: 370px;
 }
 
 .programming-item {
@@ -410,6 +402,8 @@ background-color: var(--background-color);
 .workers {
     margin-top: 94px;
     background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .footer {
