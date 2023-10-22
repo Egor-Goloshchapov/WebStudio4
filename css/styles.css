@@ -16,6 +16,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: solid red;
 }
 
 .article {
@@ -111,6 +112,10 @@ margin-right: auto;
     line-height: 26px; 
     letter-spacing: 0.48px;  
     margin-right: 8px; 
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
    .article-portfolio {
@@ -120,6 +125,10 @@ margin-right: auto;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.08px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
    }
 
    .article-projects {
@@ -129,6 +138,8 @@ margin-right: auto;
     font-weight: 400;
     line-height: 30px; 
     letter-spacing: 0.48px;
+    padding-left: 24px;
+    padding-right: 24px;
    }
 
    .article-footer-portfolio {
@@ -204,19 +215,7 @@ margin-bottom: 9px;
     background: var(--background-color);
 }
 
-.description-portfolio-color {
-    background-color: var(--akcent-color);
-    border: none;
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; 
-    letter-spacing: 0.48px;    
-    margin-right: 8px;
-}
+
 
 #footer-content-portfolio {
     background: var(--background-color);
