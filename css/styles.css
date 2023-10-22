@@ -16,7 +16,6 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: solid red;
 }
 
 .article {
@@ -415,4 +414,12 @@ background-color: var(--background-color);
 .footer {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.header-span {
+    color: #000;
+}
+
+.footer-span {
+    color: #FFF;
 }
