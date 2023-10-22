@@ -257,8 +257,6 @@ letter-spacing: 0.28px;
 .section-list {
     display: flex;
     gap: 30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 justify-content: center;
 }
 
@@ -421,4 +419,9 @@ width: 370px;
 .description {
     padding-bottom: 94px;
     padding-top: 94px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
