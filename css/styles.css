@@ -386,7 +386,8 @@ background-color: var(--background-color);
 }
 
 .article-item {
-width: 370px;
+/*width: 370px;*/
+flex-basis: calc((100% - 60px) / 3);
 }
 
 .programming-item {
