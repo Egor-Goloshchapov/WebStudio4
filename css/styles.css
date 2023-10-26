@@ -46,6 +46,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
    }
 
    .workers-team {
@@ -56,6 +57,7 @@ letter-spacing: 1.08px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
    }
 
    .workers-job {
@@ -339,8 +341,8 @@ margin-left: 5px;
 .article-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    padding-bottom: 94px;
 }
 
 .articles-fotos {
@@ -418,8 +420,7 @@ flex-basis: calc((100% - 60px) / 3);
 }
 
 .description {
-    padding-bottom: 94px;
-    padding-top: 94px;
+
 }
 
 .section {
