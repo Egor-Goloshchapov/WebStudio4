@@ -68,7 +68,6 @@ margin-bottom: 50px;
     line-height: normal;
     letter-spacing: 0.48px;
     margin-top: 10px;
-    padding-bottom: 30px;
     text-align: center;
    }
 
@@ -127,8 +126,8 @@ margin-right: auto;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.08px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
     margin-top: 20px;
     margin-bottom: 4px;
    }
@@ -183,9 +182,9 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
-margin-top: 30px;
 margin-bottom: 10px;
 text-align: center;
+margin-top: 30px;
 }
 
 .article-footer {
@@ -283,6 +282,7 @@ justify-content: center;
 .workers-item {
     margin-right: 30px;
     background-color: #FFF;
+    padding-bottom: 30px;
 }
 
 .workers-item:last-child {
@@ -316,16 +316,8 @@ justify-content: center;
 .description-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
 }
 
-.article-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    padding-bottom: 30px;
-}
 
 .article-fotos {
 margin-right: 5px;
@@ -342,7 +334,7 @@ margin-left: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 94px;
+    padding-top: 50px;
 }
 
 .articles-fotos {
@@ -420,7 +412,8 @@ flex-basis: calc((100% - 60px) / 3);
 }
 
 .description {
-
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section {
