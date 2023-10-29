@@ -425,3 +425,9 @@ flex-basis: calc((100% - 60px) / 3);
 .article-article {
     margin-right: 30px;
 }
+
+.section-item::before {
+    content: "";
+    display: block;
+    
+}
