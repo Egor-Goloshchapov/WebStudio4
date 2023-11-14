@@ -99,6 +99,7 @@ margin-right: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px;
 }
 
    .description-portfolio {
@@ -258,17 +259,8 @@ letter-spacing: 0.28px;
 .header-list {
     display: flex;
     gap: 50px;
-    align-items: center;
+    align-items: center; 
 }
-
-.header-shadow {
-    width: 1600px;
-    height: 1px; 
-    box-shadow: 1px 01px 0px 0px black;
-    background-color: transparent;
-    margin: 20px 0;
-}
-
 .header-contacts{
     display: flex;
     justify-content: end;
@@ -384,6 +376,12 @@ margin-left: 5px;
     padding-top: 24px;
 }
 
+.header-shadow {
+    width: 2000px;
+    height: 1px;
+    box-shadow: inset 0 1px 1px #ECECEC;      
+}
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -406,6 +404,15 @@ background-image: url(../imges/backgroundpicture.jpg);
     /*width: 370px;*/
     flex-basis: calc((100% - 60px) / 3);
     margin-bottom: 30px;
+    border: 1px solid #EEE;
+    background: #FFF;   
+}
+
+.article-item:hover {
+    max-width: 100%;
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .programming-item {
@@ -460,6 +467,7 @@ background-image: url(../imges/backgroundpicture.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .section-item:nth-child(2)::before {
@@ -473,6 +481,7 @@ background-image: url(../imges/backgroundpicture.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .section-item:nth-child(3)::before {
@@ -486,6 +495,7 @@ background-image: url(../imges/backgroundpicture.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .section-item:nth-child(4)::before {
@@ -499,8 +509,17 @@ background-image: url(../imges/backgroundpicture.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px; 
+    border-radius: 4px;
 }
 
 .article-list:nth-child(4):nth-child(5):nth-child(6) {
+    margin-bottom: 0px;
+}
+
+.article-list:nth-child(5) {
+margin-bottom: 0px;
+}
+
+.article-list {
     margin-bottom: 0px;
 }
