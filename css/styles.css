@@ -123,6 +123,7 @@ margin-right: auto;
 .description-portfolio:hover {
     color: #FFFFFF;
     background-color: #2196F3;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
    .article-portfolio {
@@ -192,6 +193,8 @@ text-align: center;
 margin-top: 30px;
 }
 
+/*footer*/
+
 .article-footer {
     color: #2196F3;
 font-family: Raleway;
@@ -228,6 +231,8 @@ margin-bottom: 9px;
     background: var(--background-color);
 }
 
+/*header*/
+
 .header-link {
     color: var(--title-color);
 font-size: 14px;
@@ -254,7 +259,7 @@ letter-spacing: 0.28px;
 
 .header-contact:hover {
     color: #2196F3;
-} 
+}
 
 .header-list {
     display: flex;
@@ -303,30 +308,6 @@ justify-content: center;
     margin-right: 0px;
 }
 
-.footer-list {
-
-}
-
-.footer-mail {
-    display: flex;
-    color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    margin-bottom: 9px;
-}
-
-.footer-phone {
-    color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-}
-
 .description-list {
     display: flex;
     justify-content: center;
@@ -355,6 +336,8 @@ margin-left: 5px;
     margin-right: 5px;
     margin-left: 5px;
 }
+
+/*header*/
 
 .header-container {
     display: flex;
@@ -386,10 +369,6 @@ margin-left: 5px;
     padding-top: 200px;
     padding-bottom: 200px;
 background-image: url(../imges/backgroundpicture.jpg);
-}
-
-.footer {
-    background-color: var(--background-color);
 }
 
 .section-item {
@@ -428,17 +407,8 @@ background-image: url(../imges/backgroundpicture.jpg);
     padding-bottom: 94px;
 }
 
-.footer {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
 .header-span {
     color: #000;
-}
-
-.footer-span {
-    color: #FFF;
 }
 
 .description {
@@ -454,6 +424,8 @@ background-image: url(../imges/backgroundpicture.jpg);
 .article-article {
     margin-right: 30px;
 }
+
+/*section-item childs*/
 
 .section-item:first-child::before {
     content: "";
@@ -521,4 +493,57 @@ margin-bottom: 0px;
 
 .article-list {
     margin-bottom: 0px;
+}
+
+/*footer*/
+
+.footer-portfolio-color {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 9px;
+}
+
+.footer-portfolio-color-phone {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.footer-span {
+    color: #FFF;
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer {
+    background-color: var(--background-color);
+}
+
+.footer-phone {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.footer-mail {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 9px;
 }
