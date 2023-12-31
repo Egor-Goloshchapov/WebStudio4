@@ -68,6 +68,7 @@ margin-bottom: 50px;
     line-height: normal;
     letter-spacing: 0.48px;
     margin-top: 10px;
+    margin-bottom: 28px;
     text-align: center;
    }
 
@@ -250,11 +251,11 @@ letter-spacing: 0.28px;
     display: flex;
     flex-direction: row;
     color: #757575;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
 }
 
 .header-contact:hover {
@@ -549,30 +550,44 @@ margin-bottom: 0px;
 /*icons*/
 
 .workers-icons {
+    fill: #AFB1B8;
     width: 20px;
     height: 20px;
     margin-top: 28px;
     margin-right: 34px;
 }
 
-.clientage {
-    padding-top: 94px;
-    color: #212121; 
-    background-color: #FFF;
-    text-align: center;
-    font-size: 36px;
+.contacts-icon {
+    fill: #757575;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.contacts.icon:hover {
+    fill: blue;
+}
+
+.footer-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-links-tittle {
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.08px
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
-.contacts-icon {
-    width: 16px;
-    height: 12px;
+.footer-links {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 72px;
 }
 
-.contact-icon {
-    width: 16px;
-    height: 12px;
-}
