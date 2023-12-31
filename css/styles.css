@@ -545,3 +545,34 @@ margin-bottom: 0px;
     letter-spacing: 0.42px;
     margin-bottom: 9px;
 }
+
+/*icons*/
+
+.workers-icons {
+    width: 20px;
+    height: 20px;
+    margin-top: 28px;
+    margin-right: 34px;
+}
+
+.clientage {
+    padding-top: 94px;
+    color: #212121; 
+    background-color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px
+}
+
+.contacts-icon {
+    width: 16px;
+    height: 12px;
+}
+
+.contact-icon {
+    width: 16px;
+    height: 12px;
+}
