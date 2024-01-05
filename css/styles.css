@@ -549,12 +549,27 @@ margin-bottom: 0px;
 
 /*icons*/
 
-.workers-icons {
+/*.workers-icons {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
     margin-top: 28px;
     margin-right: 34px;
+}*/
+
+.workers-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    border-radius: 50%;
+}
+
+.workers-link:hover {
+   background-color: #2196F3;
+   fill: #FFFFFF;
 }
 
 .contacts-icon {
@@ -569,25 +584,114 @@ margin-bottom: 0px;
 }
 
 .footer-icons {
+    fill: #FFFFFF;
     width: 20px;
     height: 20px;
 }
 
-.footer-links-tittle {
-    margin-left: auto;
-    margin-right: auto;
+.worker-list {
+    display: flex;
+    /*padding-right: 44px;
+    padding-left: 44px;*/
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-article {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
 
-.footer-links {
-    display: flex;
-    margin-left: 70px;
-    margin-top: 72px;
+.contacts-icon:hover {
+    fill: #2196F3;
 }
+
+/*section-clients*/
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-tittle {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 66px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.clients-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-link:hover {
+    border: 1px solid var(--akcent-color);
+    fill: var(--akcent-color);
+}
+
+/*footer*/
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-article {
+    padding-top: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/*.footer-icons {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}*/
+
+.footer-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #FFFFFF;
+    border-radius: 50%;
+}
+
+.footer-link:hover {
+    background-color: var(--akcent-color);
+    fill: var(--akcent-color);
+}
+
+
+
 
