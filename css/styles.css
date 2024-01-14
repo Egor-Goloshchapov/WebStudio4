@@ -400,6 +400,22 @@ justify-content: center;
     padding-bottom: 94px;
 }
 
+.programming-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.80);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-right: 95px;
+    padding-left: 94px;
+}
+
 .workers {
     background-color: #F5F4FA;
     padding-top: 94px;
