@@ -56,7 +56,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="main-tittle">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="main-description">Замовити послугу</button>
+            <button type="button" class="main-description" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <section class="section">
@@ -106,19 +106,19 @@
                 </li>
                 <li class="programming-item">
                     <div class="programming-box">
-                    <img class="programming-fotos" src="./imges/work2.jpg" alt="programming" />
-                    <div class="programming-description">
-                        <h3 class="programming-text">Мобільні додатки</h3>
+                        <img class="programming-fotos" src="./imges/work2.jpg" alt="programming" />
+                        <div class="programming-description">
+                            <h3 class="programming-text">Мобільні додатки</h3>
+                        </div>
                     </div>
-                </div>
                 </li>
                 <li class="programming-items">
                     <div class="programming-box">
-                    <img class="programming-fotos" src="./imges/work3.jpg" alt="programming" />
-                    <div class="programming-description">
-                        <h3 class="programming-text">Дизайнерські рішення</h3>
+                        <img class="programming-fotos" src="./imges/work3.jpg" alt="programming" />
+                        <div class="programming-description">
+                            <h3 class="programming-text">Дизайнерські рішення</h3>
+                        </div>
                     </div>
-                </div>
                 </li>
             </ul>
         </div>
@@ -368,8 +368,76 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-follow">
+                <p class="footer-follow-text">Підпишіться на розсилку</p>
+                <form action="" class="footer-follow-form">
+                    <input type="text" class="footer-folllow-input" placeholder="E-mail" id="footer-follow-mail">
+                    <button type="submit" class="footer-follow-button">
+                       <p class="footer-follow-texst">Підписатися</p> 
+                        <svg class="footer-follow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <form action="">
+                <button type="button" class="modal-button-close" data-modal-close>
+                    <svg class="modal-icon-close" width="18px" height="18px">
+                        <use href="./imges/symbol-defs.svg#closemodal"></use>
+                    </svg>
+                </button>
+                <h3 class="modal-tittle">Залиште свої дані, ми вам передзвонимо</h3>
+                <ul class="modal-list">
+                    <li class="modal-item">
+                        <label for="#name" class="modal-name">
+                            Ім'я
+                        </label>
+                        <input type="text" id="name" class="modal-input">
+                    </li>
+                    <li class="modal-item">
+                        <label for="#phone" class="modal-name">
+                            Телефон
+                        </label>
+                        <input type="text" id="phone" class="modal-input">
+                    </li>
+                    <li class="modal-item">
+                        <label for="#mail" class="modal-name">
+                            Пошта
+                        </label>
+                        <input type="text" id="mail" class="modal-input">
+                    </li>
+                    <li class="modal-item">
+                        <label for="#comment" class="modal-name">
+                            Коментар
+                        </label>
+                        <input type="text" id="comment" class="modale-input" placeholder="Введіть текст">
+                    </li>
+                </ul>
+                <div class="modal-container">
+                    <div class="modal-container2">
+                        <label for="box">
+                            <svg class="modal-icon">
+                                <use href="./imges/symbol-defs.svg#box"></use>
+                            </svg>
+                            Погоджуюся з розсилкою та приймаю
+                            <a href="#" class="modal-link">
+                                Умови договору
+                            </a>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="modal-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
 </body>
 
 </html>
