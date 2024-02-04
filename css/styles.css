@@ -67,11 +67,10 @@ body {
     padding-right: 22px;
     padding-top: 6px;
     padding-bottom: 6px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .description-portfolio:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
@@ -117,7 +116,7 @@ body {
     letter-spacing: 0.28px;
     position: relative;
     display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header-link::after {
@@ -146,12 +145,10 @@ body {
 }
 
 .header-link:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     color: #2196F3;
 }
 
 .header-link:hover::after {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     opacity: 1;
 }
 
@@ -164,11 +161,10 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header-contact:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     color: #2196F3;
 }
 
@@ -611,11 +607,10 @@ body {
     justify-content: center;
     fill: #AFB1B8;
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .workers-link:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     background-color: #2196F3;
     fill: #FFFFFF;
 }
@@ -704,11 +699,10 @@ body {
     justify-content: center;
     fill: #AFB1B8;
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .clients-link:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
     border: 1px solid var(--akcent-color);
     fill: var(--akcent-color);
 }
@@ -751,11 +745,10 @@ body {
     fill: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.10);
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .footer-link:hover {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     background-color: var(--akcent-color);
     fill: var(--akcent-color);
 }
