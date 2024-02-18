@@ -33,6 +33,8 @@ body {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
+    animation-name: buy-something;
+    animation-duration: 3s;
 }
 
 .main-description {
@@ -49,6 +51,20 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
+}
+
+@keyframes buy-something {
+    0% {
+        transform: translate(-1000px, 0);
+    }
+
+    50% {
+        rotate: 360deg;
+    }
+
+    100% {
+        transform: translate(0);
+    }
 }
 
 .description-portfolio {
@@ -68,6 +84,61 @@ body {
     padding-top: 6px;
     padding-bottom: 6px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.description-portfolio:nth-child(1) {
+    animation-name: portfolio-button;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(5) {
+    animation-name: portfolio-buton;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(2) {
+    animation-name: portfolio-btn;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(3) {
+    animation-name: portfolio-btn;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(4) {
+    animation-name: portfolio-btn;
+    animation-duration: 3s;
+}
+
+@keyframes portfolio-button {
+    0% {
+        transform: translate(-1000px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes portfolio-buton {
+    0% {
+        transform: translate(1000px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes portfolio-btn {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        rotate: 360deg;
+    }
 }
 
 .description-portfolio:hover {
@@ -163,7 +234,7 @@ body {
     letter-spacing: 0.78px;
 }
 
-.header-link:hover  {
+.header-link:hover {
     color: #2196F3;
 }
 
@@ -191,12 +262,26 @@ body {
     display: flex;
     gap: 50px;
     align-items: center;
+    animation-name: header-rotation;
+    animation-duration: 3s;
+}
+
+@keyframes header-rotation {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        rotate: 360deg;
+    }
 }
 
 .header-contacts {
     display: flex;
     justify-content: end;
     gap: 50px;
+    animation-name: header-rotation;
+    animation-duration: 3s;
 }
 
 .section-list {
@@ -330,17 +415,6 @@ body {
     top: 0;
     animation-name: pictures-hover;
     animation-duration: 1s;
-}
-
-@keyframes pictures-hover {
-
-    50% {
-        scroll-padding-top: 50%;
-    }
-
-    100% {
-        scroll-padding-top: 100%;
-    }
 }
 
 .article-overlay {
