@@ -1,0 +1,205 @@
+.description-portfolio {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    margin-right: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.description-portfolio:nth-child(1) {
+    animation-name: portfolio-button;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(5) {
+    animation-name: portfolio-buton;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(2) {
+    animation-name: portfolio-btn;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(3) {
+    animation-name: portfolio-btn;
+    animation-duration: 3s;
+}
+
+.description-portfolio:nth-child(4) {
+    animation-name: portfolio-btn;
+    animation-duration: 3s;
+}
+
+@keyframes portfolio-button {
+    0% {
+        transform: translate(-1000px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes portfolio-buton {
+    0% {
+        transform: translate(1000px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes portfolio-btn {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.description-portfolio:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+/*article*/
+
+.article-portfolio {
+    color: var(--title-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.article-projects {
+    color: #757575;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 20px;
+}
+
+.article-footer-portfolio {
+    color: var(--akcent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin-bottom: 20px;
+}
+
+.article-footer {
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin-bottom: 20px;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.article-item {
+    /*width: 370px;*/
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEE;
+    background: #FFF;
+    position: relative;
+}
+
+.article-item:hover {
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.article-hover {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    /* background-color: rgba(33, 150, 243, 0.90);
+    width: 370px;
+    height: 294px; */
+    padding-top: 63px;
+    padding-left: 24px;
+    position: absolute;
+    top: 0;
+    animation-name: pictures-hover;
+    animation-duration: 1s;
+}
+
+.article-overlay {
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.90);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 250ms;
+}
+
+.article-overlay:hover {
+    opacity: 1;
+}
+
+.description {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.description-list {
+    display: flex;
+    justify-content: center;
+}
+.article-list:nth-child(4):nth-child(5):nth-child(6) {
+    margin-bottom: 0px;
+}
+
+.article-list:nth-child(5) {
+    margin-bottom: 0px;
+}
+
+.article-list {
+    margin-bottom: 0px;
+}
