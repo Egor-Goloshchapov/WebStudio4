@@ -1,93 +1,83 @@
-/*workers*/
-
-/*.workers-icons {
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-    margin-top: 28px;
-    margin-right: 34px;
-}*/
-
-.team-workers {
-    color: var(--title-color);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.workers-team {
-    color: var(--title-color);
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
-
-.workers-job {
-    color: #757575;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.48px;
-    margin-top: 10px;
-    margin-bottom: 28px;
-    text-align: center;
-}
-
-.workers {
+& {
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.workers-link {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: #AFB1B8;
-    border-radius: 50%;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &-team {
+        color: $title-color;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
 
-.workers-link:hover {
-    background-color: #2196F3;
-    fill: #FFFFFF;
-}
+    &-list {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
 
-.worker-list {
-    display: flex;
-    /*padding-right: 44px;
-    padding-left: 44px;*/
-    padding-bottom: 15px;
-    justify-content: center;
-    gap: 10px;
-}
+    &-item {
+        margin-right: 30px;
+        background-color: $text-colors;
+        padding-bottom: 30px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
 
-.workers-item {
-    margin-right: 30px;
-    background-color: #FFF;
-    padding-bottom: 30px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 0px 0px 4px 4px;
-}
+        &-item:last-child {
+            margin-right: 0px;
+        }
+    }
 
-.workers-list {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-}
+    &-company {
+        color: $title-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 30px;
+    }
 
-.workers-item:last-child {
-    margin-right: 0px;
+    &-job {
+        color: $text-colors;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        margin-top: 10px;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    &-lists {
+        display: flex;
+        /*padding-right: 44px;
+        padding-left: 44px;*/
+        padding-bottom: 15px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &-link {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: $icon-color;
+        border-radius: 50%;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            background-color: $akcent-color;
+            fill: $white-color;
+        }
+    }
 }

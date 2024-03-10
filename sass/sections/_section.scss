@@ -1,95 +1,90 @@
-.section-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-
-.article {
-    color: var(--title-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-}
-
-.article-tittle {
-    color: var(--title-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.section-item {}
-
-.section-item:last-child {
-    margin-right: 0px;
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.section-item:first-child::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-size: 70px;
-    background-image: url(../imges/antenna.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
 
-.section-item:nth-child(2)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-size: 70px;
-    background-image: url(../imges/clock.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
+    &-list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
 
-.section-item:nth-child(3)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-size: 70px;
-    background-image: url(../imges/diagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
+    &-item:last-child {
+        margin-right: 0px;
+    }
+    
+    &-item:first-child::before {
+        content: "";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-color: $section-background-color;
+        background-size: 70px;
+        background-image: url(../imges/antenna.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+    
+    &-item:nth-child(2)::before {
+        content: "";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-color: $section-background-color;
+        background-size: 70px;
+        background-image: url(../imges/clock.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+    
+    &-item:nth-child(3)::before {
+        content: "";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-color: $section-background-color;
+        background-size: 70px;
+        background-image: url(../imges/diagram.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+    
+    &-item:nth-child(4)::before {
+        content: "";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-color: $section-background-color;
+        background-size: 70px;
+        background-image: url(../imges/astronaut.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
 
-.section-item:nth-child(4)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-size: 70px;
-    background-image: url(../imges/astronaut.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-#section-content {
-    background: var(--background-color);
+    &-tittle {
+        color: $title-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    &-article {
+        color: $title-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+    }
 }
