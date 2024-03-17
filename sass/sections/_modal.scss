@@ -1,6 +1,7 @@
 .is-hidden {
     display: none;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .is-hidden .modal {
@@ -32,7 +33,7 @@
         transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-1%, -1%);
 
-    &__button--close {
+    &__button {
         position: absolute;
         top: 8px;
         right: 8px;
@@ -86,22 +87,22 @@
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
 
-        &__input:hover {
+        &:hover {
             border: 1px solid $akcent-color;
         }
     }
 
-    &__input:hover+&__input--icon {
+    &__input:hover+ &__icon {
         fill: $akcent-color;
     }
 
-    &__input--icon {
+    &__icon {
         position: absolute;
         left: 15px;
         top: 30px;
     }
 
-    &__input+&__input--icon:hover {
+    &__input+&__icon:hover {
         fill: $akcent-color;
     }
 

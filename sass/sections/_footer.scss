@@ -8,13 +8,7 @@
     }
 
     &__articles {
-        color: $akcent-color;
-        font-family: Raleway;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.78px;
+        @extend %logo;
         margin-bottom: 20px;
     }
 
@@ -83,12 +77,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        fill:  $white-color;
         background-color: rgba(255, 255, 255, 0.10);
         border-radius: 50%;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &__link:hover {
+        &:hover {
             background-color: $akcent-color;
             fill: $akcent-color;
         }

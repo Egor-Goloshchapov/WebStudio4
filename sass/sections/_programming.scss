@@ -38,6 +38,10 @@
     }
 
     &__text {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-right: 95px;
+        padding-left: 94px;
         text-align: center;
         font-size: 14px;
         font-style: normal;
@@ -45,9 +49,5 @@
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        padding-right: 95px;
-        padding-left: 94px;
     }
 }

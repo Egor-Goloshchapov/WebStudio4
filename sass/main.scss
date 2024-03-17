@@ -1,12 +1,16 @@
 @import "./utils/vars.scss"; 
+@import "./utils/placeholders.scss";
+@import "./utils/mixin.scss";
+
 @import "./base/common.scss";
 @import "./base/container.scss";
 @import "./base/reset.scss";
+
+@import "./sections/modal.scss";
 @import "./sections/clients.scss";
 @import "./sections/footer.scss";
 @import "./sections/header.scss";
 @import "./sections/hero.scss";
-@import "./sections/modal.scss";
 @import "./sections/programming.scss";
 @import "./sections/section.scss";
 @import "./sections/workers.scss";

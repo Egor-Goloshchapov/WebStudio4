@@ -129,7 +129,7 @@
                 <ul class="workers__list">
                     <li class="workers__item">
                         <article class="workers__article">
-                            <img src="./imges/designer.jpg" alt="Product Designer" />
+                            <img src="./imges/designer.jpg" alt="Product Designer"/>
                             <h3 class="workers__company">Ігор Дем'яненко</h3>
                             <p class="workers__job">Product Designer</p>
                             <ul class="workers__lists">
@@ -390,8 +390,8 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form action="">
-                <button type="button" class="modal__button--close" data-modal-close>
+            <form class="modal__form">
+                <button type="button" class="modal__button" data-modal-close>
                     <svg class="modal__icon--close" width="18px" height="18px">
                         <use href="./imges/symbol-defs.svg#closemodal"></use>
                     </svg>
@@ -403,7 +403,7 @@
                             Ім'я
                         </label>
                         <input type="text" id="name" class="modal__input" required>
-                        <svg class="modal__input--icon" width="18px" height="18px">
+                        <svg class="modal__icon" width="18px" height="18px">
                             <use href="./imges/symbol-defs.svg#personmodal"></use>
                         </svg>
                     </li>
@@ -412,7 +412,7 @@
                             Телефон
                         </label>
                         <input type="text" id="phone" class="modal__input" required>
-                        <svg class="modal__input--icon" width="18px" height="18px">
+                        <svg class="modal__icon" width="18px" height="18px">
                             <use href="./imges/symbol-defs.svg#phonemodal"></use>
                         </svg>
                     </li>
@@ -421,7 +421,7 @@
                             Пошта
                         </label>
                         <input type="text" id="mail" class="modal__input" required>
-                        <svg class="modal__input--icon" width="18px" height="18px">
+                        <svg class="modal__icon" width="18px" height="18px">
                             <use href="./imges/symbol-defs.svg#emailmodal"></use>
                         </svg>
                     </li>
@@ -446,7 +446,7 @@
                         </a>
                     </label>
                 </div>
-                <button type="submit" class="modal__btn">Відправити</button>
+                <button type="submit" class="modal__btn" data-modal-close>Відправити</button>
             </form>
         </div>
     </div>
