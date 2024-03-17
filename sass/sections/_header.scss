@@ -15,7 +15,13 @@
 
     &__logo {
         margin-right: 93px;
-        @extend %logo;
+        color: $akcent-color;
+        font-family: Raleway;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
     }
 
     &__span {

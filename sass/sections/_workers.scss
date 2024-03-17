@@ -4,13 +4,7 @@
     padding-bottom: 94px;
 
     &__team {
-        color: $title-color;
-        text-align: center;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.08px;
+        @extend %title;
         margin-bottom: 50px;
     }
 
@@ -22,7 +16,8 @@
 
     &__item {
         margin-right: 30px;
-        background-color: $white-color;;
+        background-color: $white-color;
+        ;
         padding-bottom: 30px;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         border-radius: 0px 0px 4px 4px;
@@ -33,10 +28,8 @@
     }
 
     &__company {
-        color: $title-color;
-        font-size: 16px;
+        @include text($color: $title-color, $size: 16px, $weight: 500);
         font-style: normal;
-        font-weight: 500;
         line-height: normal;
         letter-spacing: 0.48px;
         margin-bottom: 10px;
@@ -45,10 +38,8 @@
     }
 
     &__job {
-        color: $text-colors;
-        font-size: 16px;
+        @include text($color: $text-colors, $size: 16px, $weight: 400);
         font-style: normal;
-        font-weight: 400;
         line-height: normal;
         letter-spacing: 0.48px;
         margin-top: 10px;
@@ -66,7 +57,7 @@
     }
 
     &__link {
-        @include btn-icon ($color: $icon-color, $width: 44px , $height: 44px);
+        @include btn-icon ($color: $icon-color, $width: 44px, $height: 44px);
         display: flex;
         align-items: center;
         justify-content: center;

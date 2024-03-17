@@ -14,14 +14,14 @@
   border-radius: 4px;
 }
 
-.header__logo, .footer__articles {
-  color: #2196F3;
-  font-family: Raleway;
-  font-size: 26px;
+.workers__team, .programming__work, .clients__tittle {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.78px;
+  letter-spacing: 1.08px;
 }
 
 body {
@@ -225,12 +225,6 @@ img {
   padding-bottom: 94px;
 }
 .clients__tittle {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
   margin-bottom: 66px;
 }
 .clients__list {
@@ -265,6 +259,13 @@ img {
   display: flex;
 }
 .footer__articles {
+  color: #2196F3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
   margin-bottom: 20px;
 }
 .footer__span {
@@ -301,14 +302,14 @@ img {
   padding-left: 70px;
 }
 .footer__article {
+  margin-left: 70px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
   padding-top: 0;
   margin-bottom: 20px;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-left: 70px;
 }
 .footer__list {
   display: flex;
@@ -400,6 +401,13 @@ img {
 }
 .header__logo {
   margin-right: 93px;
+  color: #2196F3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 .header__span {
   color: #000;
@@ -520,13 +528,6 @@ img {
   padding-bottom: 94px;
 }
 .programming__work {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
 .programming__list {
@@ -653,13 +654,6 @@ img {
   padding-bottom: 94px;
 }
 .workers__team {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
 .workers__list {
@@ -680,8 +674,8 @@ img {
 .workers__company {
   color: #212121;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   line-height: normal;
   letter-spacing: 0.48px;
   margin-bottom: 10px;
@@ -691,8 +685,8 @@ img {
 .workers__job {
   color: #757575;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 10px;
