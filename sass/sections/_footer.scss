@@ -3,11 +3,11 @@
     padding-bottom: 80px;
     background-color: $background-color;
 
-    &-container {
+    &__container {
         display: flex;
     }
 
-    &-articles {
+    &__articles {
         color: $akcent-color;
         font-family: Raleway;
         font-size: 26px;
@@ -18,11 +18,11 @@
         margin-bottom: 20px;
     }
 
-    &-span {
+    &__span {
         color: $text-color;
     }
 
-    &-adress {
+    &__adress {
         color: $text-color;
         font-size: 14px;
         font-style: normal;
@@ -33,7 +33,7 @@
         margin-bottom: 9px;
     }
 
-    &-mail {
+    &__mail {
         color: rgba(255, 255, 255, 0.60);
         font-size: 14px;
         font-style: normal;
@@ -43,7 +43,7 @@
         margin-bottom: 9px;
     }
 
-    &-phone {
+    &__phone {
         color: rgba(255, 255, 255, 0.60);
         font-size: 14px;
         font-style: normal;
@@ -52,11 +52,11 @@
         letter-spacing: 0.42px;
     }
 
-    &-apps {
+    &__apps {
         padding-left: 70px;
     }
 
-    &-article {
+    &__article {
         padding-top: 0;
         margin-bottom: 20px;
         color: $text-color;
@@ -67,17 +67,17 @@
         margin-left: 70px;
     }
 
-    &-list {
+    &__list {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
 
-    &-item:nth-child(1) {
+    &__item:nth-child(1) {
         padding-left: 70px;
     }
 
-    &-link {
+    &__link {
         width: 44px;
         height: 44px;
         display: flex;
@@ -88,23 +88,23 @@
         border-radius: 50%;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &-link:hover {
-            background-color: var(--akcent-color);
-            fill: var(--akcent-color);
+        &__link:hover {
+            background-color: $akcent-color;
+            fill: $akcent-color;
         }
     }    
 
-    &-icons {
+    &__icons {
         fill:  $white-color;
         width: 20px;
         height: 20px;
     }    
 
-    &-follow {
+    &__follow {
         padding-left: 93px;
     }
 
-    &-follow-text {
+    &__follow--text {
         margin-top: 0;
         margin-bottom: 20px;
         color: #FFF;
@@ -115,12 +115,12 @@
         text-transform: uppercase;
     }
 
-    &-follow-form {
+    &__follow--form {
         display: flex;
         gap: 20px;
     }
 
-    &-folllow-input {
+    &__folllow--input {
         width: 458px;
         padding: 15px 175px 15px 16px;
         color: $text-colors;
@@ -131,7 +131,7 @@
         line-height: 1.25;
     }
 
-    &-follow-button {
+    &__follow--button {
         display: flex;
         gap: 10px;
         background-color: $akcent-color;
@@ -143,7 +143,7 @@
         padding-top: 10px;
     }
 
-    &-follow-texst {
+    &__follow--texst {
         color: $text-color;
         text-align: center;
         font-size: 16px;

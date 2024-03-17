@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &-tittle {
+    &__tittle {
         color: $title-color;
         text-align: center;
         font-size: 36px;
@@ -12,7 +12,7 @@
         margin-bottom: 66px;
     }
 
-    &-list {
+    &__list {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,7 +20,7 @@
         flex-wrap: wrap;
     }
 
-    &-link {
+    &__link {
         width: 170px;
         height: 92px;
         border: 1px solid #AFB1B8;

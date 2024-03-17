@@ -1,9 +1,9 @@
-& {
-    background-color: #F5F4FA;
+.workers {
+    background-color: $section-background-color;
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &-team {
+    &__team {
         color: $title-color;
         text-align: center;
         font-size: 36px;
@@ -14,25 +14,25 @@
         margin-bottom: 50px;
     }
 
-    &-list {
+    &__list {
         display: flex;
         margin-top: 50px;
         justify-content: center;
     }
 
-    &-item {
+    &__item {
         margin-right: 30px;
-        background-color: $text-colors;
+        background-color: $white-color;;
         padding-bottom: 30px;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         border-radius: 0px 0px 4px 4px;
 
-        &-item:last-child {
+        &__item:last-child {
             margin-right: 0px;
         }
     }
 
-    &-company {
+    &__company {
         color: $title-color;
         font-size: 16px;
         font-style: normal;
@@ -44,7 +44,7 @@
         margin-top: 30px;
     }
 
-    &-job {
+    &__job {
         color: $text-colors;
         font-size: 16px;
         font-style: normal;
@@ -56,7 +56,7 @@
         text-align: center;
     }
 
-    &-lists {
+    &__lists {
         display: flex;
         /*padding-right: 44px;
         padding-left: 44px;*/
@@ -65,7 +65,7 @@
         gap: 10px;
     }
 
-    &-link {
+    &__link {
         width: 44px;
         height: 44px;
         display: flex;

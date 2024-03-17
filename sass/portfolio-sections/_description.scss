@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &-portfolio {
+    &__portfolio {
         background-color: #F5F4FA;
         border-radius: 4px;
         border: none;
@@ -21,34 +21,34 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-        &-portfolio:hover {
-            color: #FFFFFF;
-            background-color: #2196F3;
+        &__portfolio:hover {
+            color: $white-color;
+            background-color: $akcent-color;
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
         }
     }
 
-    &-portfolio:nth-child(1) {
+    &__portfolio:nth-child(1) {
         animation-name: portfolio-button;
         animation-duration: 3s;
     }
 
-    &-portfolio:nth-child(5) {
+    &__portfolio:nth-child(5) {
         animation-name: portfolio-buton;
         animation-duration: 3s;
     }
 
-    &-portfolio:nth-child(2) {
+    &__portfolio:nth-child(2) {
         animation-name: portfolio-btn;
         animation-duration: 3s;
     }
 
-    &-portfolio:nth-child(3) {
+    &__portfolio:nth-child(3) {
         animation-name: portfolio-btn;
         animation-duration: 3s;
     }
 
-    &-portfolio:nth-child(4) {
+    &__portfolio:nth-child(4) {
         animation-name: portfolio-btn;
         animation-duration: 3s;
     }
@@ -83,8 +83,8 @@
         }
     }
 
-    &-portfolios {
-        color: var(--title-color);
+    &__portfolios {
+        color: $title-color;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -95,8 +95,8 @@
         margin-bottom: 4px;
     }
 
-    &-projects {
-        color: #757575;
+    &__projects {
+        color: $text-colors;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -107,7 +107,7 @@
         margin-bottom: 20px;
     }
 
-    &-lists {
+    &__lists {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -115,14 +115,14 @@
         gap: 30px;
     }
 
-    &-item {
+    &__item {
         /*width: 370px;*/
         flex-basis: calc((100% - 60px) / 3);
         border: 1px solid #EEE;
         background: #FFF;
         position: relative;
 
-        &-item:hover {
+        &__item:hover {
             border: 1px solid #EEE;
             background: #FFF;
             box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -131,7 +131,7 @@
         }
     }
 
-    &-hover {
+    &__hover {
         color: #FFF;
         font-size: 18px;
         font-style: normal;
@@ -149,7 +149,7 @@
         animation-duration: 1s;
     }
 
-    &-overlay {
+    &__overlay {
         width: 370px;
         height: 294px;
         background-color: rgba(33, 150, 243, 0.90);
@@ -160,24 +160,24 @@
         transition-duration: 250ms;
     }
 
-    &-overlay:hover {
+    &__overlay:hover {
         opacity: 1;
     }
 
-    &-list {
+    &__list {
         display: flex;
         justify-content: center;
     }
 
-    &-lists:nth-child(4):nth-child(5):nth-child(6) {
+    &__lists:nth-child(4):nth-child(5):nth-child(6) {
         margin-bottom: 0px;
     }
 
-    &-lists:nth-child(5) {
+    &__lists:nth-child(5) {
         margin-bottom: 0px;
     }
 
-    &-lists {
+    &__lists {
         margin-bottom: 0px;
     }
 }

@@ -1,7 +1,7 @@
 .programming {
     padding-bottom: 94px;
 
-    &-work {
+    &__work {
         color: $title-color;
         text-align: center;
         font-size: 36px;
@@ -12,7 +12,7 @@
         margin-bottom: 50px;
     }
 
-    &-list {
+    &__list {
         display: flex;
         margin-top: 50px;
         justify-content: center;
@@ -20,15 +20,15 @@
         margin-right: auto;
     }
 
-    &-item {
+    &__item {
         margin-right: 30px;
     }
 
-    &-box {
+    &__box {
         position: relative;
     }
 
-    &-description {
+    &__description {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -37,7 +37,7 @@
         background-color: rgba(47, 48, 58, 0.80);
     }
 
-    &-text {
+    &__text {
         text-align: center;
         font-size: 14px;
         font-style: normal;
