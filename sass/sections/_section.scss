@@ -69,10 +69,8 @@
     }
 
     &__tittle {
-        color: $title-color;
-        font-size: 14px;
+        @include text($color: $title-color, $size: 14px, $weight: 700);
         font-style: normal;
-        font-weight: 700;
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;

@@ -491,10 +491,10 @@ img {
 }
 .hero__tittle {
   color: #FFF;
-  text-align: center;
   font-size: 44px;
-  font-style: normal;
   font-weight: 900;
+  text-align: center;
+  font-style: normal;
   line-height: 60px;
   letter-spacing: 2.64px;
   text-transform: uppercase;
@@ -631,8 +631,8 @@ img {
 .section__tittle {
   color: #212121;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;

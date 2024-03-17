@@ -14,8 +14,8 @@
     }
 
     &__logo {
-        @extend %logo;
         margin-right: 93px;
+        @extend %logo;
     }
 
     &__span {
