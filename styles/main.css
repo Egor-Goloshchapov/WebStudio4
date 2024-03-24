@@ -387,8 +387,14 @@ img {
 }
 
 .header {
-  padding-bottom: 25px;
-  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 .header__container {
   display: flex;
@@ -413,11 +419,26 @@ img {
   color: #000;
 }
 .header__list {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  animation-name: header-rotation;
-  animation-duration: 3s;
+  display: none;
+  justify-content: center;
+  gap: 16px;
+  margin-right: 237px;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    animation-name: header-rotation;
+    animation-duration: 3s;
+    margin-left: 87px;
+    margin-right: 96px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header__list {
+    display: flex;
+  }
 }
 @keyframes header-rotation {
   0% {
@@ -460,27 +481,30 @@ img {
   opacity: 1;
 }
 .header__contacts {
-  display: flex;
-  justify-content: end;
-  gap: 50px;
-  animation-name: header-rotation;
-  animation-duration: 3s;
-}
-.header__contact {
-  display: flex;
-  align-items: center;
+  display: none;
   justify-content: center;
-  flex-direction: row;
-  color: #757575;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 16px;
 }
-.header__contact:hover {
-  color: #2196F3;
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .header__contacts--icon {
   fill: #757575;
