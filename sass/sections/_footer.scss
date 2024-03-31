@@ -1,16 +1,48 @@
 .footer {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 480px;
+    height: 603px;
     background-color: $background-color;
 
-    &__container {
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 463px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 2000px;
+        height: 252px;
+    }
+
+    &__tablet {
         display: flex;
+    }
+
+    &__container {
+        gap: 60px;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
+
+    &__box {
+        flex-direction: column;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 165px;
+        }
     }
 
     &__articles {
         color: $akcent-color;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -30,7 +62,7 @@
         line-height: 24px;
         letter-spacing: 0.42px;
         margin-top: 20px;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
 
     &__mail {
@@ -40,7 +72,7 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.42px;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
 
     &__phone {
@@ -53,11 +85,15 @@
     }
 
     &__apps {
-        padding-left: 70px;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
     }
 
     &__article {
-        margin-left: 70px;
         color: $text-color;
         font-size: 14px;
         font-weight: 700;
@@ -91,16 +127,17 @@
             background-color: $akcent-color;
             fill: $akcent-color;
         }
-    }    
+    }
 
     &__icons {
-        fill:  $white-color;
+        fill: $white-color;
         width: 20px;
         height: 20px;
-    }    
+    }
 
     &__follow {
-        padding-left: 93px;
+        text-align: center;
+        justify-content: center;
     }
 
     &__follow--text {
@@ -115,12 +152,12 @@
     }
 
     &__follow--form {
-        display: flex;
         gap: 20px;
     }
 
     &__folllow--input {
-        width: 458px;
+        width: 450px;
+        height: 50px;
         padding: 15px 175px 15px 16px;
         color: $text-colors;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -128,6 +165,10 @@
         border-radius: 4px;
         font-size: 16px;
         line-height: 1.25;
+
+        @media screen and (min-width: 1200px) {
+            width: 458px;
+        }
     }
 
     &__follow--button {
@@ -140,6 +181,12 @@
         text-align: center;
         justify-content: center;
         padding-top: 10px;
+        margin-top: 20px;
+        margin-left: 140px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 291px;
+        }
     }
 
     &__follow--texst {

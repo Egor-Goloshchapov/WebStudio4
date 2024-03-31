@@ -1,7 +1,12 @@
 .workers {
     background-color: $section-background-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__team {
         @extend %title;
@@ -9,13 +14,19 @@
     }
 
     &__list {
-        display: flex;
+        display: block;
         margin-top: 50px;
         justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
 
     &__item {
-        margin-right: 30px;
+        margin-bottom: 30px;
         background-color: $white-color;
         ;
         padding-bottom: 30px;
@@ -53,7 +64,6 @@
         padding-left: 44px;*/
         padding-bottom: 15px;
         justify-content: center;
-        gap: 10px;
     }
 
     &__link {

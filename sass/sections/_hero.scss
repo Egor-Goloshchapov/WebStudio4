@@ -1,32 +1,54 @@
 .hero {
-    padding-top: 200px;
+    padding-top: 118px;
     padding-bottom: 200px;
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0) 0%, rgba(52, 52, 56, 0.55) 0%), url(../imges/backgroundpicture.jpg);
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0) 0%, rgba(52, 52, 56, 0.55) 0%), url(../imges/hero-image-mobile.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../imges/hero-image-tablet.webp);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../imges/backgroundpicture.jpg);
+        padding: 200px 0;
+    }
 
     &__tittle {
-        @include text($color: $text-color, $size: 44px, $weight: 900);
-        text-align: center;
-        font-style: normal;
-        line-height: 60px;
-        letter-spacing: 2.64px;
+        @include text($color: $text-color, $size: 26px, $weight: 900);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
+        text-align: center;
         margin-bottom: 30px;
-        max-width: 696px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 360px;
         animation-name: buy-something;
         animation-duration: 3s;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 2.64px;
+            max-width: 696px;
+            margin-bottom: 40px;
+        }
     }
 
     @keyframes buy-something {
         0% {
             transform: translate(-1000px, 0);
         }
-    
+
         50% {
             rotate: 360deg;
         }
-    
+
         100% {
             transform: translate(0);
         }
@@ -34,6 +56,9 @@
 
     &__description {
         @extend %button-styles;
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            text-align: center;
+        }
     }
 }
-
