@@ -3,12 +3,10 @@
   width: 216px;
   height: 50px;
   color: #FFF;
-  text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
-  display: block;
   border-radius: 4px;
 }
 
@@ -277,21 +275,19 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 480px;
+  width: 100%;
   height: 603px;
   background-color: #2F303A;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    width: 768px;
-    height: 463px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 2000px;
     height: 252px;
   }
 }
@@ -482,7 +478,6 @@ img {
   display: flex;
 }
 .header__logo {
-  margin-right: 93px;
   color: #2196F3;
   font-family: Raleway;
   font-size: 26px;
@@ -512,8 +507,7 @@ img {
     align-items: center;
     animation-name: header-rotation;
     animation-duration: 3s;
-    margin-left: 87px;
-    margin-right: 96px;
+    margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -570,6 +564,7 @@ img {
   .header__contacts {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -600,19 +595,20 @@ img {
 .hero {
   padding-top: 118px;
   padding-bottom: 200px;
-  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0) 0%, rgba(52, 52, 56, 0.55) 0%), url(../imges/hero-image-mobile.webp);
+  width: 100%;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-image-mobile.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-image-tablet.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-image-tablet.webp.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/backgroundpicture.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-image-desktop.webp);
     padding: 200px 0;
   }
 }
@@ -626,10 +622,17 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  justify-content: center;
   margin-bottom: 30px;
   max-width: 360px;
   animation-name: buy-something;
   animation-duration: 3s;
+  margin-left: 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero__tittle {
+    margin-left: 204px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__tittle {
@@ -651,10 +654,19 @@ img {
     transform: translate(0);
   }
 }
+.hero__description {
+  margin-left: 140px;
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    margin-left: 284px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__description {
     justify-content: center;
     text-align: center;
+    margin-left: 450px;
   }
 }
 

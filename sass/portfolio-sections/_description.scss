@@ -1,6 +1,23 @@
 .description {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__items {
+        margin-bottom: 15px;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__boxs {
+        display: flex;
+    }
 
     &__portfolio {
         background-color: #F5F4FA;
@@ -83,6 +100,15 @@
         }
     }
 
+    &__fotos {
+        width: 450px;
+        height: 294px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    }
+
     &__portfolios {
         @include text($color: $title-color, $size: 18px, $weight: 700);
         font-style: normal;
@@ -104,19 +130,30 @@
     }
 
     &__lists {
+        flex-direction: column;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         margin-top: 50px;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__item {
-        /*width: 370px;*/
+        width: 354px;
+        height: 294px;
         flex-basis: calc((100% - 60px) / 3);
         border: 1px solid #EEE;
         background: #FFF;
         position: relative;
+        margin-top: 30px;
 
         &:hover {
             border: 1px solid #EEE;
@@ -137,7 +174,7 @@
         /* background-color: rgba(33, 150, 243, 0.90);
         width: 370px;
         height: 294px; */
-        padding-top: 63px;
+        padding-top: 77px;
         padding-left: 24px;
         position: absolute;
         top: 0;
@@ -146,7 +183,7 @@
     }
 
     &__overlay {
-        width: 370px;
+        width: 450px;
         height: 294px;
         background-color: rgba(33, 150, 243, 0.90);
         position: absolute;
@@ -155,14 +192,28 @@
         opacity: 0;
         transition-duration: 250ms;
 
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+            height: 294px;
+        }
+
         &:hover {
             opacity: 1;
         }
     }
 
     &__list {
+        // display: flex;
+        // justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__list:nth-child(1):nth-child(2):nth-child(3) {
         display: flex;
-        justify-content: center;
     }
 
     &__lists:nth-child(4):nth-child(5):nth-child(6) {

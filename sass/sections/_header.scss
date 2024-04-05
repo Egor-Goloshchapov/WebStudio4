@@ -19,7 +19,6 @@
     }
 
     &__logo {
-        margin-right: 93px;
         color: $akcent-color;
         font-family: Raleway;
         font-size: 26px;
@@ -27,6 +26,7 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.78px;
+
         @media screen and (min-width: 768px) {
             margin-right: 70px;
         }
@@ -48,8 +48,7 @@
             align-items: center;
             animation-name: header-rotation;
             animation-duration: 3s;
-            margin-left: 87px;
-            margin-right: 96px;
+            margin-right: 88px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -114,10 +113,13 @@
         display: none;
         justify-content: center;
         gap: 16px;
+
         @media screen and (min-width: 768px) {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
         }
+
         // display: flex;
         // justify-content: end;
         // gap: 50px;
@@ -127,18 +129,19 @@
 
     &__contact {
         @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        color: $text-colors;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            color: $text-colors;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         // display: flex;
 
 
@@ -157,4 +160,10 @@
             fill: $akcent-color;
         }
     }
+
+    // &__shadow {
+    //     border: 1px solid #ececec;
+    //     width: 480px;
+    //     height: 1px;
+    // }
 }
