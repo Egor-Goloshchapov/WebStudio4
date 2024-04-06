@@ -18,10 +18,18 @@
     &__tablet {
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
     }
 
     &__container {
-        gap: 60px;
+            gap: 93px;
 
         @media screen and (min-width: 1200px) {
             display: flex;
@@ -50,7 +58,6 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.78px;
-        margin-bottom: 20px;
     }
 
     &__span {
@@ -88,12 +95,16 @@
     }
 
     &__apps {
+        text-align: center;
+        justify-content: center;
         margin-top: 60px;
         margin-bottom: 60px;
-        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
 
         @media screen and (min-width: 1200px) {
-            margin-right: 70px;
         }
     }
 
@@ -113,9 +124,7 @@
         gap: 10px;
     }
 
-    &__item:nth-child(1) {
-        padding-left: 70px;
-    }
+
 
     &__link {
         width: 44px;
@@ -142,6 +151,14 @@
     &__follow {
         text-align: center;
         justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
     }
 
     &__follow--text {
@@ -213,6 +230,8 @@
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0.96px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__follow--form {

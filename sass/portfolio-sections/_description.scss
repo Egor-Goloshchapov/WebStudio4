@@ -136,7 +136,9 @@
         gap: 30px;
 
         @media screen and (min-width: 768px) {
-
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         @media screen and (min-width: 1200px) {
@@ -153,7 +155,7 @@
         border: 1px solid #EEE;
         background: #FFF;
         position: relative;
-        margin-top: 30px;
+        gap: 30px;
 
         &:hover {
             border: 1px solid #EEE;
@@ -183,8 +185,6 @@
     }
 
     &__overlay {
-        width: 450px;
-        height: 294px;
         background-color: rgba(33, 150, 243, 0.90);
         position: absolute;
         top: 0;
@@ -192,10 +192,7 @@
         opacity: 0;
         transition-duration: 250ms;
 
-        @media screen and (min-width: 1200px) {
-            width: 370px;
-            height: 294px;
-        }
+        @media screen and (min-width: 1200px) {}
 
         &:hover {
             opacity: 1;

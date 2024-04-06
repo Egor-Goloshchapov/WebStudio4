@@ -9,9 +9,10 @@
 
     &__tittle {
         @extend %title;
-        margin-bottom: 66px;
+        margin-bottom: 30px;
 
         @media screen and (min-width: 1200px) {
+            margin-bottom: 66px;
             font-size: 36px;
         }
     }
