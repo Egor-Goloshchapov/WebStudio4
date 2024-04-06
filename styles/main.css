@@ -13,7 +13,7 @@
 .workers__team, .programming__work, .clients__tittle {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -243,6 +243,11 @@ img {
 }
 .clients__tittle {
   margin-bottom: 66px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__tittle {
+    font-size: 36px;
+  }
 }
 .clients__list {
   display: flex;
@@ -590,6 +595,7 @@ img {
   .header__contacts {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -713,6 +719,11 @@ img {
 }
 .programming__work {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .programming__work {
+    font-size: 36px;
+  }
 }
 .programming__list {
   display: flex;
@@ -921,6 +932,11 @@ img {
 }
 .workers__team {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .workers__team {
+    font-size: 36px;
+  }
 }
 .workers__list {
   display: block;
