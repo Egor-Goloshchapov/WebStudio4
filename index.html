@@ -57,7 +57,6 @@
                 </svg>
             </button>
         </div>
-        </div>
     </header>
 
 
@@ -389,11 +388,11 @@
 
             <div class="footer__follow">
                 <p class="footer__follow--text">Підпишіться на розсилку</p>
-                <form action="" class="footer__follow--form">
+                <form class="footer__follow--form">
                     <input type="text" class="footer__folllow--input" placeholder="E-mail" id="footer__follow--mail"
                         required>
                     <button type="submit" class="footer__follow--button">
-                        <p class="footer__follow--texst">Підписатися</p>
+                        Підписатися
                         <svg class="footer__follow--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none">
                             <path
@@ -416,7 +415,7 @@
                 <h3 class="modal__tittle">Залиште свої дані, ми вам передзвонимо</h3>
                 <ul class="modal__list">
                     <li class="modal__item">
-                        <label for="#name" class="modal__name">
+                        <label class="modal__name">
                             Ім'я
                         </label>
                         <input type="text" id="name" class="modal__input" required>
@@ -425,7 +424,7 @@
                         </svg>
                     </li>
                     <li class="modal__item">
-                        <label for="#phone" class="modal__name">
+                        <label class="modal__name">
                             Телефон
                         </label>
                         <input type="text" id="phone" class="modal__input" required>
@@ -434,7 +433,7 @@
                         </svg>
                     </li>
                     <li class="modal__item">
-                        <label for="#mail" class="modal__name">
+                        <label class="modal__name">
                             Пошта
                         </label>
                         <input type="text" id="mail" class="modal__input" required>
@@ -443,7 +442,7 @@
                         </svg>
                     </li>
                     <li class="modal__item">
-                        <label for="#comment" class="modal__name">
+                        <label class="modal__name">
                             Коментар
                         </label>
                         <input type="text" id="comment" class="modal__inputs" placeholder="Введіть текст" required>
@@ -451,7 +450,7 @@
                 </ul>
                 <div class="modal__checkbox">
                     <input type="checkbox" class="modal__input--check visually-hidden">
-                    <label for="box" class="modal__container--label">
+                    <label class="modal__container--label">
                         <span class="">
                             <svg class="modal__icon">
                                 <use href="./imges/symbol-defs.svg#box"></use>
@@ -467,62 +466,61 @@
             </form>
         </div>
     </div>
-    <div class="backdrop is-hiden" data-menu>
+    <div class="backdrop is-hidden" data-menu>
         <div class="menu">
-            <form>
-                <button class="menu__btn" data-menu-close>
-                    <svg class="menu__close" width="18px" height="18px">
-                        <use href="./imges/symbol-defs.svg#closemodal"></use>
-                    </svg>
-                </button>
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="./index.html" class="menu__link menu__link--current">Студія</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="./index.html" class="menu__link">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="menu__contacts">
-                    <ul class="menu__lists">
-                        <li class="menu__items">
-                            <a href="tel:+380961111111" class="menu__phone">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                        <li class="menu__items">
-                            <a href="mailto:info@devstudio.com" class="menu__mail">
-                                info@devstudio.com
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu__socials">
-                    <ul class="menu__social">
-                        <li class="menu__socials--item">
-                            <a href="https://www.instagram.com/" class="menu__socials--link"> Instagram </a>
-                        </li>
-                        <li class="menu__socials--item">
-                            <a href="https://twitter.com/i/flow/login" class="menu__socials--link"> Twitter </a>
-                        </li>
-                        <li class="menu__socials--item">
-                            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" class="menu__socials--link"> Facebook </a>
-                        </li>
-                        <li class="menu__socials--item">
-                            <a href="https://ua.linkedin.com/" class="menu__socials--link"> LinkedIn </a>
-                        </li>
-                    </ul>
-            </form>
+            <button class="menu__btn" data-menu-close>
+                <svg class="menu__close" width="18px" height="18px">
+                    <use href="./imges/symbol-defs.svg#closemodal"></use>
+                </svg>
+            </button>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link menu__link--current">Студія</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__contacts">
+                <ul class="menu__lists">
+                    <li class="menu__items">
+                        <a href="tel:+380961111111" class="menu__phone">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu__items">
+                        <a href="mailto:info@devstudio.com" class="menu__mail">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu__socials">
+                <ul class="menu__social">
+                    <li class="menu__socials--item">
+                        <a href="https://www.instagram.com/" class="menu__socials--link"> Instagram </a>
+                    </li>
+                    <li class="menu__socials--item">
+                        <a href="https://twitter.com/i/flow/login" class="menu__socials--link"> Twitter </a>
+                    </li>
+                    <li class="menu__socials--item">
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
+                            class="menu__socials--link"> Facebook </a>
+                    </li>
+                    <li class="menu__socials--item">
+                        <a href="https://ua.linkedin.com/" class="menu__socials--link"> LinkedIn </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    </div>
     <script src="./js/modal.js" type="module"></script>
-    <script src="./js/burger-menu.js" type="burger-menu"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -198,6 +198,16 @@
     }
 
     &__follow--button {
+        color: $text-color;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         gap: 10px;
         background-color: $akcent-color;
@@ -219,19 +229,6 @@
             margin-left: 12px;
             margin-top: 0;
         }
-    }
-
-    &__follow--texst {
-        color: $text-color;
-        text-align: center;
-        justify-content: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0.96px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     &__follow--form {
