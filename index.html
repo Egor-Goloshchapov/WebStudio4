@@ -50,8 +50,17 @@
                     </a>
                 </li>
             </ul>
+
+            <button type="button" class="header__menu" data-menu-open>
+                <svg class="header__icon" width="40" height="40">
+                    <use href="./imges/symbol-defs.svg#burger-menu"></use>
+                </svg>
+            </button>
+        </div>
         </div>
     </header>
+
+
     <main>
         <section class="hero">
             <div class="container">
@@ -458,7 +467,62 @@
             </form>
         </div>
     </div>
+    <div class="backdrop is-hiden" data-menu>
+        <div class="menu">
+            <form>
+                <button class="menu__btn" data-menu-close>
+                    <svg class="menu__close" width="18px" height="18px">
+                        <use href="./imges/symbol-defs.svg#closemodal"></use>
+                    </svg>
+                </button>
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link menu__link--current">Студія</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__contacts">
+                    <ul class="menu__lists">
+                        <li class="menu__items">
+                            <a href="tel:+380961111111" class="menu__phone">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="mailto:info@devstudio.com" class="menu__mail">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__socials">
+                    <ul class="menu__social">
+                        <li class="menu__socials--item">
+                            <a href="https://www.instagram.com/" class="menu__socials--link"> Instagram </a>
+                        </li>
+                        <li class="menu__socials--item">
+                            <a href="https://twitter.com/i/flow/login" class="menu__socials--link"> Twitter </a>
+                        </li>
+                        <li class="menu__socials--item">
+                            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" class="menu__socials--link"> Facebook </a>
+                        </li>
+                        <li class="menu__socials--item">
+                            <a href="https://ua.linkedin.com/" class="menu__socials--link"> LinkedIn </a>
+                        </li>
+                    </ul>
+            </form>
+        </div>
+    </div>
+    </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/burger-menu.js" type="burger-menu"></script>
 </body>
 
 </html>

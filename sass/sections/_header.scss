@@ -172,6 +172,12 @@
         fill: $text-colors;
     }
 
+    &__menu {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
     // &__shadow {
     //     border: 1px solid #ececec;
     //     width: 480px;
