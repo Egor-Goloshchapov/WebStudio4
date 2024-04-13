@@ -3,6 +3,11 @@
     padding-top: 16px;
 
     @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
         padding-top: 26px;
         padding-bottom: 26px;
     }
@@ -112,7 +117,7 @@
     &__contacts {
         display: none;
         justify-content: center;
-        gap: 16px;
+        gap: 10px;
 
         @media screen and (min-width: 768px) {
             display: flex;

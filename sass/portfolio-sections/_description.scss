@@ -151,13 +151,20 @@
     }
 
     &__item {
-        width: 354px;
         height: 294px;
         flex-basis: calc((100% - 60px) / 3);
         border: 1px solid #EEE;
         background: #FFF;
         position: relative;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
 
         &:hover {
             border: 1px solid #EEE;
@@ -203,8 +210,9 @@
     }
 
     &__list {
-        // display: flex;
-        // justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
 
         @media screen and (min-width: 1200px) {
             display: flex;

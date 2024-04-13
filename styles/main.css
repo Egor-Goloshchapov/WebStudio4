@@ -28,12 +28,11 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -304,6 +303,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer__tablet {
     flex-direction: row;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -461,11 +461,6 @@ img {
   font-size: 16px;
   line-height: 1.25;
 }
-@media screen and (min-width: 1200px) {
-  .footer__folllow--input {
-    width: 100%;
-  }
-}
 .footer__follow--button {
   color: #FFF;
   text-align: center;
@@ -512,6 +507,12 @@ img {
   padding-top: 16px;
 }
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .header {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -607,7 +608,7 @@ img {
 .header__contacts {
   display: none;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .header__contacts {
@@ -660,7 +661,7 @@ img {
 
 .hero {
   padding-top: 118px;
-  padding-bottom: 200px;
+  padding-bottom: 118px;
   width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-image-mobile.webp.webp);
   background-position: center;
@@ -688,7 +689,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  justify-content: center;
   margin-bottom: 30px;
   max-width: 360px;
   animation-name: buy-something;
@@ -811,13 +811,20 @@ img {
 }
 .section__item {
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .section__item {
+    margin-bottom: 0;
+  }
 }
 .section__item:first-child::before {
   content: "";
   align-items: center;
   justify-content: center;
   display: block;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   background-size: 70px;
@@ -840,7 +847,7 @@ img {
 .section__item:nth-child(2)::before {
   content: "";
   display: block;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   background-size: 70px;
@@ -863,7 +870,7 @@ img {
 .section__item:nth-child(3)::before {
   content: "";
   display: block;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   background-size: 70px;
@@ -886,7 +893,7 @@ img {
 .section__item:nth-child(4)::before {
   content: "";
   display: block;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   background-size: 70px;
@@ -910,10 +917,10 @@ img {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
-  font-style: normal;
-  line-height: normal;
+  line-height: 1.14;
   letter-spacing: 0.42px;
   margin-bottom: 10px;
+  align-items: center;
 }
 .section__article {
   color: #212121;
@@ -951,16 +958,16 @@ img {
   }
 }
 .workers__team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .workers__team {
+    margin-bottom: 0;
     font-size: 36px;
   }
 }
 .workers__list {
   display: block;
-  margin-top: 50px;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -970,14 +977,25 @@ img {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .workers__list {
+    margin-top: 50px;
+  }
+}
 .workers__item {
   background-color: #FFFFFF;
+  padding-bottom: 24px;
   margin-bottom: 30px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 .workers__item__item:last-child {
   margin-right: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .workers__item {
+    margin-bottom: 30px;
+  }
 }
 .workers__company {
   color: #212121;
@@ -998,8 +1016,13 @@ img {
   line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 10px;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .workers__job {
+    margin-bottom: 28px;
+  }
 }
 .workers__lists {
   display: flex;
@@ -1016,7 +1039,6 @@ img {
   justify-content: center;
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-bottom: 24px;
 }
 .workers__link:hover {
   background-color: #2196F3;
@@ -1048,8 +1070,8 @@ img {
 
 .menu {
   background-color: #fff;
-  width: 480px;
-  height: 768px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .menu__link {
