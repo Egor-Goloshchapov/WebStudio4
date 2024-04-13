@@ -38,7 +38,7 @@
     }
 
     &__box {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         justify-content: center;
 
@@ -117,6 +117,10 @@
         margin-bottom: 20px;
         line-height: 1.14;
         text-transform: uppercase;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &__list {
@@ -183,15 +187,23 @@
     }
 
     &__folllow--input {
-        width: 450px;
+        width: 100%;
         height: 50px;
-        padding: 15px 175px 15px 16px;
+        padding-left: 10px;
         color: $text-colors;
         border: 1px solid rgba(255, 255, 255, 0.3);
         background-color: #2F303A;
         border-radius: 4px;
         font-size: 16px;
         line-height: 1.25;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
     }
 
     &__follow--button {
@@ -215,12 +227,7 @@
         justify-content: center;
         padding-right: 28px;
         padding-top: 10px;
-        margin-left: 140px;
         margin-top: 20px;
-
-        @media screen and (min-width: 768px) {
-            margin-left: 291px;
-        }
 
         @media screen and (min-width: 1200px) {
             margin-left: 12px;

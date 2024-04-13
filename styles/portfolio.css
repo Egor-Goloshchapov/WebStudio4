@@ -34,7 +34,12 @@ img {
   margin-right: auto;
   padding: 0 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -200,6 +205,9 @@ img {
 }
 .header__item--svg {
   fill: #757575;
+}
+.header__menu {
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .header__menu {
@@ -391,7 +399,6 @@ img {
 .description__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .description__list {
@@ -455,7 +462,7 @@ img {
   }
 }
 .footer__box {
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
 }
@@ -528,6 +535,11 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .footer__article {
+    display: flex;
+  }
+}
 .footer__list {
   display: flex;
   justify-content: center;
@@ -586,15 +598,25 @@ img {
   gap: 20px;
 }
 .footer__folllow--input {
-  width: 450px;
+  width: 100%;
   height: 50px;
-  padding: 15px 175px 15px 16px;
+  padding-left: 10px;
   color: #757575;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2F303A;
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .footer__folllow--input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__folllow--input {
+    width: 358px;
+  }
 }
 .footer__follow--button {
   color: #FFF;
@@ -617,13 +639,7 @@ img {
   justify-content: center;
   padding-right: 28px;
   padding-top: 10px;
-  margin-left: 140px;
   margin-top: 20px;
-}
-@media screen and (min-width: 768px) {
-  .footer__follow--button {
-    margin-left: 291px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__follow--button {
@@ -733,6 +749,9 @@ img {
 .menu__link--current {
   color: #2196F3;
 }
+.menu__socials--link {
+  color: #2196F3;
+}
 
 .backdrops {
   width: 100%;
@@ -828,5 +847,8 @@ img {
   margin-right: 20px;
 }
 .menu__link--current {
+  color: #2196F3;
+}
+.menu__socials--link {
   color: #2196F3;
 }/*# sourceMappingURL=portfolio.css.map */

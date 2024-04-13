@@ -64,14 +64,5 @@
 
     &__description {
         @extend %button-styles;
-        margin-left: 130px;
-
-        @media screen and (min-width: 768px) {
-           margin-left: 260px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            margin-left: 450px;
-        }
     }
 }
