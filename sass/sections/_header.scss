@@ -165,11 +165,33 @@
     &__contacts--icon {
         fill: $text-colors;
         margin-right: 10px;
-        width: 16px;
-        height: 12px;
 
         &:hover {
             fill: $akcent-color;
+        }
+
+        @media screen and (min-width: 768px) {
+            &:first-child {
+                width: 14px;
+                height: 10px;
+            }
+
+            &:last-child {
+                width: 10px;
+                height: 14px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            &:first-child {
+                width: 16px;
+                height: 12px;
+            }
+
+            &:last-child {
+                width: 10px;
+                height: 16px;
+            }
         }
     }
 

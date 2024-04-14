@@ -27,6 +27,18 @@
     height: 100%;
     position: relative;
 
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &__item {
+        margin-bottom: 35px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     &__link {
         color: $title-color;
         font-size: 40px;
@@ -38,6 +50,10 @@
         &:hover {
             color: $akcent-color;
         }
+    }
+
+    &__list {
+        outline: solid red;
     }
 
     &__btn {
@@ -111,5 +127,11 @@
 
     &__socials--link {
         color: $akcent-color;
+    }
+
+    &__adaptive {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }

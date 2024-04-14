@@ -197,11 +197,29 @@ img {
 .header__contacts--icon {
   fill: #757575;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
 }
 .header__contacts--icon:hover {
   fill: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .header__contacts--icon:first-child {
+    width: 14px;
+    height: 10px;
+  }
+  .header__contacts--icon:last-child {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__contacts--icon:first-child {
+    width: 16px;
+    height: 12px;
+  }
+  .header__contacts--icon:last-child {
+    width: 10px;
+    height: 16px;
+  }
 }
 .header__item--svg {
   fill: #757575;
@@ -227,6 +245,11 @@ img {
 }
 .description__items {
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .description__items {
+    margin-bottom: 0;
+  }
 }
 .description__box {
   display: flex;
@@ -351,6 +374,7 @@ img {
   background: #FFF;
   position: relative;
   gap: 30px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .description__item {
@@ -462,7 +486,6 @@ img {
   }
 }
 .footer__box {
-  flex-direction: row;
   text-align: center;
   justify-content: center;
 }
@@ -474,6 +497,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__box {
     margin-right: 70px;
+    text-align: left;
   }
 }
 .footer__articles {
@@ -682,6 +706,17 @@ img {
   height: 100%;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__item {
+  margin-bottom: 35px;
+}
+.menu__item:last-child {
+  margin-bottom: 0;
+}
 .menu__link {
   color: #212121;
   font-size: 40px;
@@ -692,6 +727,9 @@ img {
 }
 .menu__link:hover {
   color: #2196F3;
+}
+.menu__list {
+  outline: solid red;
 }
 .menu__btn {
   position: absolute;
@@ -751,6 +789,11 @@ img {
 }
 .menu__socials--link {
   color: #2196F3;
+}
+.menu__adaptive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .backdrops {
@@ -782,6 +825,17 @@ img {
   height: 100%;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__item {
+  margin-bottom: 35px;
+}
+.menu__item:last-child {
+  margin-bottom: 0;
+}
 .menu__link {
   color: #212121;
   font-size: 40px;
@@ -792,6 +846,9 @@ img {
 }
 .menu__link:hover {
   color: #2196F3;
+}
+.menu__list {
+  outline: solid red;
 }
 .menu__btn {
   position: absolute;
@@ -851,4 +908,9 @@ img {
 }
 .menu__socials--link {
   color: #2196F3;
+}
+.menu__adaptive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=portfolio.css.map */

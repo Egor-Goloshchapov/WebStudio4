@@ -92,7 +92,7 @@
         }
     }
 
-    &__input:hover+ &__icon {
+    &__input:hover+&__icon {
         fill: $akcent-color;
     }
 
@@ -157,7 +157,7 @@
         width: 16px;
         height: 15px;
     }
-    
+
     &__icon--close {
         fill: #000000;
         position: absolute;
@@ -169,4 +169,3 @@
         }
     }
 }
-
