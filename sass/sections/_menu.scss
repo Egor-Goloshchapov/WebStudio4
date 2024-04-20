@@ -126,10 +126,7 @@
 
     &__social {
         display: flex;
-    }
-
-    &__socials--item {
-        margin-right: 20px;
+        justify-content: space-between;
     }
 
     &__link--current {
@@ -138,16 +135,18 @@
 
     &__socials--link {
         color: $akcent-color;
-        font-size: 18px;
+        font-size: 8px;
         font-style: normal;
         font-weight: 500;
-        line-height: 22px;
+        line-height: 1.22;
         letter-spacing: 0.36px;
+
+        @media screen and (min-width: 380px) {
+            font-size: 16px;
+        }
     }
 
     &__adaptive {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 100%;
     }
 }

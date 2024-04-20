@@ -793,25 +793,26 @@ img {
 }
 .menu__social {
   display: flex;
-}
-.menu__socials--item {
-  margin-right: 20px;
+  justify-content: space-between;
 }
 .menu__link--current {
   color: #2196F3;
 }
 .menu__socials--link {
   color: #2196F3;
-  font-size: 18px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.36px;
 }
+@media screen and (min-width: 380px) {
+  .menu__socials--link {
+    font-size: 16px;
+  }
+}
 .menu__adaptive {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .backdrops {
@@ -930,23 +931,24 @@ img {
 }
 .menu__social {
   display: flex;
-}
-.menu__socials--item {
-  margin-right: 20px;
+  justify-content: space-between;
 }
 .menu__link--current {
   color: #2196F3;
 }
 .menu__socials--link {
   color: #2196F3;
-  font-size: 18px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.36px;
 }
+@media screen and (min-width: 380px) {
+  .menu__socials--link {
+    font-size: 16px;
+  }
+}
 .menu__adaptive {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 }/*# sourceMappingURL=portfolio.css.map */

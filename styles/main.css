@@ -104,13 +104,20 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #FFF;
   border-radius: 4px;
   position: relative;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-1%, -1%);
+  padding-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__button {
   position: absolute;
@@ -134,7 +141,6 @@ img {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.6px;
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 .modal__list {
@@ -155,11 +161,16 @@ img {
   margin-bottom: 4px;
 }
 .modal__input {
-  width: 448px;
+  width: 90%;
   height: 40px;
   padding-left: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .modal__input {
+    width: 448px;
+  }
 }
 .modal__input:hover {
   border: 1px solid #2196F3;
@@ -176,11 +187,16 @@ img {
   fill: #2196F3;
 }
 .modal__inputs {
-  width: 448px;
+  width: 90%;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px 90px;
+}
+@media screen and (min-width: 768px) {
+  .modal__inputs {
+    width: 448px;
+  }
 }
 .modal__inputs__inputs:hover {
   border: 1px solid #2196F3;
@@ -203,8 +219,8 @@ img {
 }
 .modal__checkbox {
   margin-top: 20px;
-  padding-left: 52px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  padding-left: 40px;
 }
 .modal__input--check {
   width: 16px;
@@ -220,12 +236,9 @@ img {
   background-color: #2196F3;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 164px;
   transition-duration: 350ms;
-}
-.modal__icon {
-  width: 16px;
-  height: 15px;
+  display: block;
+  margin: 0 auto;
 }
 .modal__icon--close {
   fill: #000000;
@@ -1189,23 +1202,24 @@ img {
 }
 .menu__social {
   display: flex;
-}
-.menu__socials--item {
-  margin-right: 20px;
+  justify-content: space-between;
 }
 .menu__link--current {
   color: #2196F3;
 }
 .menu__socials--link {
   color: #2196F3;
-  font-size: 18px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.36px;
 }
+@media screen and (min-width: 380px) {
+  .menu__socials--link {
+    font-size: 16px;
+  }
+}
 .menu__adaptive {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
