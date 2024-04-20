@@ -129,13 +129,21 @@
         justify-content: space-between;
     }
 
+    &__socials--item {
+        margin-right: 10px;
+
+        @media screen and (min-width: 380px) {
+            margin-right: 20px;
+        }
+    }
+
     &__link--current {
         color: $akcent-color;
     }
 
     &__socials--link {
         color: $akcent-color;
-        font-size: 8px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.22;
@@ -144,9 +152,5 @@
         @media screen and (min-width: 380px) {
             font-size: 16px;
         }
-    }
-
-    &__adaptive {
-        width: 100%;
     }
 }

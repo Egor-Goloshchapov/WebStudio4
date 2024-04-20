@@ -1204,12 +1204,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.menu__socials--item {
+  margin-right: 10px;
+}
+@media screen and (min-width: 380px) {
+  .menu__socials--item {
+    margin-right: 20px;
+  }
+}
 .menu__link--current {
   color: #2196F3;
 }
 .menu__socials--link {
   color: #2196F3;
-  font-size: 8px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.22;
@@ -1219,7 +1227,4 @@ img {
   .menu__socials--link {
     font-size: 16px;
   }
-}
-.menu__adaptive {
-  width: 100%;
 }/*# sourceMappingURL=main.css.map */
