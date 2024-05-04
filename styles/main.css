@@ -850,7 +850,6 @@ img {
 }
 .section__list {
   justify-content: center;
-  align-items: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
